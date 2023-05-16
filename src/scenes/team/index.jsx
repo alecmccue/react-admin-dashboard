@@ -26,8 +26,8 @@ const Team = () => {
       headerAlign: "left",
       align: "left",
     },
-    { field: "email", headerName: "Email", flex: 1 },
     { field: "phone", headerName: "Phone Number", flex: 1 },
+    { field: "email", headerName: "Email", flex: 1 },
     {
       field: "access",
       headerName: "Access Level",
