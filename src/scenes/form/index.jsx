@@ -54,6 +54,7 @@ const Form = () => {
             <Box
               display="grid"
               gap="30px"
+              mt="30px"
               gridTemplateColumns="repeat(4, minmax(0, 1fr))"
               sx={{
                 "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
@@ -137,6 +138,9 @@ const Form = () => {
                 helperText={touched.address2 && errors.address2}
                 sx={{ gridColumn: "span 4" }}
               />
+            </Box>
+            <Box display="flex" justifyContent="end" mt="20px">
+              <Button type="submit" color="secondary" variant="contained">Create New User</Button>
             </Box>
           </form>
         )}
